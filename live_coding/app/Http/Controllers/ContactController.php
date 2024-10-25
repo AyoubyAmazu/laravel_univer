@@ -1,16 +1,15 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use Illuminate\Http\Request;
 use Mail;
 
 class ContactController extends Controller
 {
-    public function create()
-    {
-        return view('contacts');
+    public function creat(){
+        return view("home");
     }
-
     public function store(Request $request)
     {
         $data = $request->validate([
